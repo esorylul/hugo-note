@@ -1,0 +1,13 @@
+{{ partial "header.html" . }}
+
+<article class="post">
+	<header class="post-title">
+		<h1>{{ .Title }}</h1>
+		<h3>{{ with .Params.author }}{{ . }}{{ end }}
+		{{ if .Params.date }} {{ if .Params.author }} / {{ end }} {{ .Date.Format "2006-01-02" }}{{ end }}</h3>
+		<hr>	
+	</header>
+	{{ .Content }} 
+</article>
+
+{{ partial "footer.html" . }}
