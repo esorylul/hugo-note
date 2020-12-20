@@ -100,7 +100,7 @@ img {
 }
 
 blockquote {
-	margin: 5px 40px;
+	margin-left: 40px ;
 	font-family: 'ZCOOL XiaoWei', serif;
 }
 
@@ -163,14 +163,17 @@ footer span {
 	body {
 		width: auto;
 	}
-	article {
+	.post {
 		max-width: 500px;
+		padding: 20px;
 	}
 }
 
 @media screen and (max-width: 480px) {
-	article {
+	.post {
 		max-width: 300px;
+		padding: 20px;
+		font-size: 15px;
 	}
 }
 
