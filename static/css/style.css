@@ -114,6 +114,8 @@ blockquote p {
 	margin: auto;
 	width: 700px;
 	font-size: 18px;
+	word-break: break-all;
+
 }
 
 .post p {
@@ -167,13 +169,43 @@ footer span {
 		max-width: 500px;
 		padding: 20px;
 	}
+	.copyright {
+		font-size: 15px;
+	}
+	.copyright span {
+		display: block;
+	}
+	hr {
+		max-width: 200px;
+	}
 }
 
 @media screen and (max-width: 480px) {
+	.list {
+		padding-left: 0;
+	}
+	.list span {
+		display: block;
+	}
+	.list a {
+		font-size: 16px;
+	}
 	.post {
-		max-width: 300px;
-		padding: 20px;
-		font-size: 15px;
+		max-width: 350px;
+		padding: 10px;
+	}
+	.post-title h1 {
+		font-size: 26px;
+		padding-top: 30px;
+	}
+	.post-title h3 {
+		font-size: 20px;
+	}
+	.copyright {
+		font-size: 18px;
+	}
+	.copyright span {
+		display: block;
 	}
 }
 
