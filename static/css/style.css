@@ -118,10 +118,6 @@ blockquote p {
 
 }
 
-.post p {
-	font-size: 18px;
-}
-
 .post-title {
 	text-align: center;
 }
@@ -161,13 +157,28 @@ footer span {
 	align-items: center;
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 960px) {
 	body {
 		width: auto;
 	}
 	.post {
-		max-width: 500px;
+		max-width: 550px;
+		padding: 30px;
+	}
+
+}
+
+@media screen and (max-width: 720px) {
+	body {
+		width: auto;
+	}
+	.post {
+		max-width: 400px;
 		padding: 20px;
+		font-size: 16px;
+	}
+	.list span {
+		display: block;
 	}
 	.copyright {
 		font-size: 15px;
@@ -181,18 +192,18 @@ footer span {
 }
 
 @media screen and (max-width: 480px) {
+	body {
+		width: auto;
+	}
+	.post {
+		max-width: 300px;
+		padding: 30px;
+	}
 	.list {
 		padding-left: 0;
 	}
 	.list span {
 		display: block;
-	}
-	.list a {
-		font-size: 16px;
-	}
-	.post {
-		max-width: 350px;
-		padding: 10px;
 	}
 	.post-title h1 {
 		font-size: 26px;
