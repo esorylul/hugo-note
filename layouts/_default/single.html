@@ -3,11 +3,8 @@
 <article class="post">
 	<header class="post-title">
 		<h1>{{ .Title }}</h1>
-		<h3>{{ with .Params.author }}{{ . }}{{ end }}
-		{{ if .Params.date }} {{ if .Params.author }} / {{ end }} {{ .Date.Format "2006-01-02" }}{{ end }}</h3>
-		<hr>	
+		<h3>{{ if .Params.author }} ◎ {{ .Params.author }} {{ end }}</h3>
 	</header>
-	{{ .Content }} 
+	{{ .Content }}
+	{{ partial "footer.html" . }} 
 </article>
-
-{{ partial "footer.html" . }}
