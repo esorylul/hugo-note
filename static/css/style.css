@@ -155,6 +155,14 @@ code {
 
 ul {
 	margin-left: 30px;
+	font-weight: lighter;
+	line-height: 2;
+}
+
+li::marker {
+	color: #cfcfcf;
+	font-size: 8px;
+	margin-bottom: 5px;
 }
 
 .list {
@@ -203,19 +211,12 @@ ul {
 	.list span {
 		display: block;
 	}
-	footer {
-		font-size: 15px;
-	}
-	hr {
-		max-width: 200px;
-	}
 }
 
 @media screen and (max-width: 480px) {
 	.post {
 		max-width: 300px;
 		padding: 30px;
-		font-size: 16px;
 	}
 	.list {
 		padding-left: 0;
@@ -224,14 +225,8 @@ ul {
 		display: block;
 	}
 	.post-title h1 {
-		font-size: 26px;
+		font-size: 21.3px;
 		padding-top: 30px;
-	}
-	.post-title h3 {
-		font-size: 20px;
-	}
-	footer {
-		font-size: 14px;
 	}
 }
 
