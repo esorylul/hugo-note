@@ -6,5 +6,14 @@
 		<h3>{{ if .Params.author }} ◎ {{ .Params.author }} {{ end }}</h3>
 	</header>
 	{{ .Content }}
-	{{ partial "footer.html" . }} 
+
+	<div class="post-nav">
+		<span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}"> {{ .Title }} </a> {{ end }}</span>
+		<span class="nav-next">{{ with .NextInSection }} <a href="{{ .RelPermalink }}"> {{ .Title }} </a>&rarr; {{ end }}</span>
+	</div>
+
+	{{ template "_internal/disqus.html" . }}
+
+	{{ partial "footer.html" . }}
 </article>
+

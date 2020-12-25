@@ -186,6 +186,18 @@ li::marker {
 	background-color: #cccccc;
 }
 
+.post-nav {
+	display: flex;
+	margin-top: 15px;
+	font-weight: bold;
+	justify-content: space-between;
+	line-height: 2;
+}
+
+.nav-next {
+	text-align: right;
+}
+
 @media screen and (max-width: 960px) {
 	body {
 		width: auto;
@@ -207,6 +219,14 @@ li::marker {
 		padding: 20px;
 		font-size: 16px;
 		box-shadow: none;
+	}
+	.post-nav {
+		flex-wrap: wrap-reverse;
+		font-size: 14px;
+	}
+	.nav-next {
+		flex-grow: 1;
+		margin-bottom: 20px;
 	}
 	.list span {
 		display: block;
@@ -237,6 +257,9 @@ li::marker {
 	.post {
 		padding: 0;
 		box-shadow: none;
+	}
+	.post-nav {
+		display: none;
 	}
 	pre {
 		white-space: pre-wrap;
