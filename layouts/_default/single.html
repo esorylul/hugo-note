@@ -12,7 +12,7 @@
 		<span class="nav-next">{{ with .NextInSection }} <a href="{{ .RelPermalink }}"> {{ .Title }} </a>&rarr; {{ end }}</span>
 	</div>
 
-	{{ template "_internal/disqus.html" . }}
+	{{ partial "disqus.html" . }}
 
 	{{ partial "footer.html" . }}
 </article>
