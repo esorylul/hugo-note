@@ -11,8 +11,8 @@
 		<span class="nav-prev">{{ with .PrevInSection }}&larr; <a href="{{ .RelPermalink }}"> {{ .Title }} </a> {{ end }}</span>
 		<span class="nav-next">{{ with .NextInSection }} <a href="{{ .RelPermalink }}"> {{ .Title }} </a>&rarr; {{ end }}</span>
 	</div>
-
-	{{ partial "disqus.html" . }}
+	
+		{{ partial "disqus.html" . }}	
 
 	{{ partial "footer.html" . }}
 </article>
