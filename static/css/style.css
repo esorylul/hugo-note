@@ -261,6 +261,9 @@ li::marker {
 	.post-nav {
 		display: none;
 	}
+	.comments {
+		display: none;
+	}
 	pre {
 		white-space: pre-wrap;
 		word-wrap: break-word;
