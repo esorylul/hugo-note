@@ -268,13 +268,13 @@ sup a {
 @media screen and (max-width: 720px) {
 	.post {
 		width: auto !important;
-		padding: 30px !important;
+		padding: 40px !important;
 	}
 }
 
 @media screen and (max-width: 480px) {
 	.post {
-		padding: 20px !important;
+		padding: 40px !important;
 	}
 	.list {
 		padding-left: 0;
