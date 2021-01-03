@@ -14,10 +14,14 @@ body {
 	min-height: 100vh;
 }
 
+.emoji {
+  font-family: Apple Color Emoji, Segoe UI Emoji, NotoColorEmoji, Segoe UI Symbol, Android Emoji, EmojiSymbols;
+}
+
 .post-title h1 {
 	font-family: 'Noto Sans SC', sans-serif;
 	font-weight: bold;
-	font-size: 21.3px;
+	font-size: 22px;
 	text-align: center;
 }
 
@@ -31,7 +35,7 @@ body {
 
 .post {
 	box-shadow: 1px 1px 10px #cfcfcf;
-	padding: 2.54cm 3.17cm 0cm 2.54cm;
+	padding: 2.54cm 3.17cm 0cm 3.17cm;
 	margin: auto;
 	width: 595px;
 	word-break: break-all;
@@ -50,30 +54,33 @@ body {
 	width: 100%;
 }
 
-h1,h2,h3 {
-	font-weight: bold;
+h1,h2,h3,h4,h5,h6 {
+	font-family: 'Noto Sans SC', sans-serif;
 	line-height: 2;
+	font-weight: normal !important;
+	margin: 10px 0;
 }
 
 h1 {
-	font-size: 18.7px;
-	font-family: 'Noto Sans SC', sans-serif;
+	font-size: 22px;
 }
 
 h2 {
-	font-size: 16px;
-	font-family: 'Noto Sans SC', sans-serif;
+	font-size: 20px;
 }
 
 h3 {
+	font-size: 18px;
+}
+
+h4,h5,h6 {
 	font-size: 16px;
-	font-family: 'Noto serif SC', serif;
 }
 
 a {
 	text-decoration: none;
 	color: black;
-	border-bottom: 1px solid black;
+	border-bottom: 1px solid rgb(133, 133, 133);
 	padding-bottom: 3px;
 }
 
@@ -84,16 +91,22 @@ a:hover {
 hr {
 	border: none;
 	border-bottom: 1px solid #cfcfcf;
-	margin-bottom: 0.8em;
+	margin-bottom: 2em;
+	margin-top: 2em;
 	height: 10px;
+}
+
+blockquote {
+	margin: 16px 0;
 }
 
 blockquote p {
 	text-indent: 0 !important;
-	font-family: 'Palatino Linotype', 'Book Antiqua', Palatino, 'STKaiti', 'KaiTi', '楷体', 'SimKai', 'DFKai-SB', 'NSimSun', serif;
-	font-size: 16px;
+	font-family: 'Noto Sans SC', sans-serif; 
+	font-size: 14px !important;
 	font-weight: normal !important;
-	padding-left: 50px;
+	text-align: center;
+	padding: 0 10px;
 }
 
 footer a {
@@ -112,16 +125,15 @@ table {
 	width: 100%;
 	margin: auto;
 	border-collapse: collapse;
+	border: 1px solid #cfcfcf;
 	font-size: 16px;
-	border-style: double;
 	border-color: #969696;
-	margin: 0.4cm auto ;
+	margin: 0.4cm auto;
 }
 
 th {
-	padding: 10px;
-	border: 1px solid #969696;
-	border-style: double;
+	padding: 8px;
+	border-bottom: 2px solid rgb(0, 0, 0);
 	font-family: 'Noto Sans SC', sans-serif;
 	font-weight: normal;
 }
@@ -131,7 +143,7 @@ td {
 	border: 1px solid #969696;
 	font-size: 16px;
 	font-weight: lighter;
-	padding: 10px 20px;
+	padding: 4px 5px;
 }
 
 pre {
@@ -145,12 +157,13 @@ code {
 	font-family: 'Source Code Pro', monospace;
 	padding: 0 5px;
 	margin: 0 5px;
-	background: #f8f8f8 !important;
+	background: #e2e2e2 !important;
 }
 
 .highlight code {
 	padding: 8px 16px;
-	font-size: 15px;
+	font-size: 14px;
+	background: #f8f8f8 !important;
 }
 
 ul {
@@ -171,7 +184,7 @@ ol li {
 
 
 li::marker {
-	color: #cfcfcf;
+	color: #999595;
 }
 
 li p {
@@ -221,25 +234,21 @@ sup a {
 	margin-left: 10px;
 }
 
-@media screen and (max-width: 960px) {
-	body {
-		width: auto;
-	}
-	.post {
-		max-width: 550px;
-		padding: 30px;
-		box-shadow: none;
-	}
-
+.footnotes {
+	font-size: 14px;
 }
 
-@media screen and (max-width: 720px) {
+.footnotes p {
+	font-size: 14px;
+}
+
+@media screen and (max-width: 850px) {
 	body {
 		width: auto;
 	}
 	.post {
-		max-width: 400px;
-		padding: 20px;
+		width: auto !important;
+		padding: 100px !important;
 		font-size: 16px;
 		box-shadow: none;
 	}
@@ -256,10 +265,16 @@ sup a {
 	}
 }
 
+@media screen and (max-width: 720px) {
+	.post {
+		width: auto !important;
+		padding: 30px !important;
+	}
+}
+
 @media screen and (max-width: 480px) {
 	.post {
-		max-width: 300px;
-		padding: 30px;
+		padding: 20px !important;
 	}
 	.list {
 		padding-left: 0;
