@@ -46,6 +46,8 @@ body {
 	line-height: 2;
 	font-weight: lighter;
 	font-size: 16px;
+	word-break: break-all;
+	text-align: justify;
 }
 
 .post img{
