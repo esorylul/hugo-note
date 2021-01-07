@@ -38,7 +38,7 @@ body {
 	padding: 2.54cm 3.17cm 0cm 3.17cm;
 	margin: auto;
 	width: 595px;
-	word-break: break-all;
+	word-break: normal;
 }
 
 .post p {
@@ -46,7 +46,7 @@ body {
 	line-height: 2;
 	font-weight: lighter;
 	font-size: 16px;
-	word-break: break-all;
+	word-break: normal;
 	text-align: justify;
 }
 
